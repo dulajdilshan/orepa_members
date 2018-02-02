@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/load',function(){
-    return view('child');
-});
+Route::get('/load/{title}','TempController@index');
